@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tekst_wishes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/padding"
+        android:text="@string/wishes"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tekst_from"
+        android:layout_below="@+id/tekst_wishes"
+        android:src="@drawable/cake_updated" />
+
+    <TextView
+        android:id="@+id/tekst_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/padding"
+        android:text="@string/from"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold" />
+
+</RelativeLayout>
